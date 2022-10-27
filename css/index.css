@@ -123,12 +123,17 @@ label {
     padding: 1rem;
     border-radius: 1rem;
     height: 2rem;
-    width: 400px;
+    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     word-break: break-all;
-    margin-left: 470px;
+    margin-left: 420px;
+}
+
+.small-text {
+    font-family: var(--font-family-2);
+    grid-column: span 2;
 }
 
 
