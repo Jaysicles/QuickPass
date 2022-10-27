@@ -65,6 +65,13 @@ a:hover {
     color: var(--colour-purple-2);
 }
 
+.divider {
+    background-color: var(--colour-purple-1);
+    height: 2px;
+    width: 200px;
+    margin-left: 620px;
+}
+
 
 /** PASSWORD GEN CONTAINER **/
 
