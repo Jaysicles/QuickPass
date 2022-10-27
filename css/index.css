@@ -1,0 +1,145 @@
+/** VARIABLES **/
+
+:root {
+    --colour-gray-1: #18191A;
+    --colour-gray-2: #242526;
+    --colour-gray-3: #3A3B3C;
+    --colour-white: #ffff;
+    --colour-black: #111111fb;
+    --colour-purple-1: #741388;
+    --colour-purple-2: #b216d1;
+    --font-family-1: 'Poppins', sans-serif;
+    --font-family-2: 'Open Sans', sans-serif;
+    --font-family-3: 'Oswald', sans-serif;
+}
+
+
+/** BODY PROPERTIES **/
+
+body {
+    background-color: var(--colour-gray-1);
+    color: var(--colour-white);
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-family: var(--font-family-1);
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-family: var(--font-family-2);
+}
+
+h4 {
+    color: var(--colour-white);
+    font-family: var(--font-family-2);
+    text-align: center;
+    margin-top: 4px;
+}
+
+
+/** Nav bar elements **/
+
+.nav-bar {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+a {
+    font-family: var(--font-family-1);
+    text-decoration: none;
+    color: var(--colour-purple-1);
+    text-align: center;
+    margin: 3rem;
+}
+
+a:hover {
+    color: var(--colour-purple-2);
+}
+
+
+/** PASSWORD GEN CONTAINER **/
+
+.container {
+    background-color: var(--colour-gray-2);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-family: var(--font-family-2);
+}
+
+.character-amount-container {
+    align-items: center;
+    display: flex;
+}
+
+.number-input {
+    width: 2rem;
+}
+
+.password-display {
+    background-color: var(--colour-gray-3);
+    color: var(--colour-white);
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    margin-left: 470px;
+}
+
+
+/** BUTTON PROPERTIES **/
+
+.btn {
+    grid-column: span 2;
+    background-color: var(--colour-gray-3);
+    border: 2px solid var(--colour-white);
+    color: var(--color-white);
+    padding: .5rem 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-3);
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--colour-gray-1);
+}
