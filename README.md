@@ -1,4 +1,6 @@
-<h1>QuickPass</h1>
+<img src="https://i.imgur.com/e1kExUg.png" width="2000" height="300">
 
-<p>A simple password generator to create strong-to-break passwords</p>
-<p>In development, coming soon</p>
+
+<h1>Introduction</h1>
+
+<p>This tool is in development</p>
