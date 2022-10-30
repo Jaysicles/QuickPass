@@ -70,6 +70,8 @@ a:hover {
     height: 2px;
     width: 200px;
     margin-left: 620px;
+    display: absolute;
+    margin-top: -12.5px;
 }
 
 
