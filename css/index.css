@@ -29,6 +29,7 @@ h1 {
     color: white;
     font-family: var(--font-family-1);
     text-align: center;
+    margin: 10px;
 }
 
 h3 {
@@ -41,6 +42,13 @@ h4 {
     font-family: var(--font-family-2);
     text-align: center;
     margin-top: 4px;
+}
+
+.password-generated-title {
+    color: var(--colour-white);
+    font-family: var(--font-family-2);
+    text-align: center;
+    margin: 5px;
 }
 
 
@@ -56,14 +64,19 @@ h4 {
 a {
     font-family: var(--font-family-1);
     text-decoration: none;
-    color: var(--colour-purple-1);
+    color: var(--colour-purple-2);
     text-align: center;
     margin: 3rem;
 }
 
 a:hover {
-    color: var(--colour-purple-2);
+    color: var(--colour-purple-1);
+    text-decoration: underline;
+    text-decoration-style: var(--colour-purple-2);
 }
+
+
+/* DEPRECATED */
 
 .divider {
     background-color: var(--colour-purple-1);
@@ -81,7 +94,7 @@ a:hover {
     background-color: var(--colour-gray-2);
     padding: 3rem;
     border-radius: 1rem;
-    margin-top: 100px;
+    margin-top: 75px;
     margin-right: 300px;
     margin-left: 300px;
     display: flex;
@@ -167,6 +180,7 @@ footer {
 
 footer.p {
     margin-top: 20px;
+    display: flex;
 }
 
 
