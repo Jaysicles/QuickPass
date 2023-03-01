@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="pass_generator.js"></script>
+    <script defer src="copy_text.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/x-icon" href="css\img\quickpass.png">
     <title>QuickPass | Password Generator</title>
 </head>
 
 <body>
+    <!-- 
     <div class="nav-bar">
         <a href="https://github.com/Jaysicles/QuickPass">How it works</a>
     </div>
+        --->
     <!-- SITE TITLE -->
-    <h1 class="title">QuickPass</h1>
+    <div class="container-title">
+        <h1 class="title">QuickPass - Password Generating Made Easy</h1>
+    </div>
     <div class="container">
         <form class="form" id="quickpassGenForm">
             <!-- UPPERCASE VALUE ELEMENT -->
@@ -39,18 +44,20 @@
             <input type="checkbox" id="includeSymbols">
 
             <button type="submit" class="btn">QUICKPASS IT!</button>
-            <br>
             <p class="small-text">Having a password that is at least 20 characters long is <em><strong>RECOMMENDED</strong></em></p>
         </form>
     </div>
-    <h4 class="password-generated-title">Your Generated Password</h4>
-    <div>
-        <h3 class="password-display" id="pass-display">-</h3>
+    <div class="container-pass-display">
+        <h4 class="password-generated-title">Your Generated Password</h4>
+        <div>
+            <h3 class="password-display" id="pass-display" type="text">Password</h3>
+        </div>
     </div>
 </body>
 <footer>
     <br>
     <p>Jaysicles 2023 | Password Generator</p>
+    <a href="#">QuickPass Developer</a>
 </footer>
 
 

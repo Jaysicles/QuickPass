@@ -11,6 +11,12 @@
     --font-family-1: 'Poppins', sans-serif;
     --font-family-2: 'Open Sans', sans-serif;
     --font-family-3: 'Oswald', sans-serif;
+    --shadow-1: #f02eaa66 0px 5px, #f02eaa4d 0px 10px, #f02eaa33 0px 15px, #f02eaa1a 0px 20px, #f02eaa0d 0px 25px;
+}
+
+html,
+body {
+    min-height: 100%;
 }
 
 
@@ -95,8 +101,37 @@ a:hover {
     padding: 3rem;
     border-radius: 1rem;
     margin-top: 75px;
-    margin-right: 300px;
-    margin-left: 300px;
+    /* margin-right: 300px; */
+    /*margin-left: 300px; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-title {
+    background-color: var(--colour-purple-1);
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 75px;
+    /* margin-right: 300px; */
+    /*margin-left: 300px; */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-pass-display {
+    background-color: var(--colour-gray-2);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 75px;
+    /* margin-right: 300px; */
+    /*margin-left: 300px; */
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,10 +141,11 @@ a:hover {
 .form {
     display: grid;
     grid-template-columns: auto auto;
-    row-gap: 1rem;
+    row-gap: 2rem;
     column-gap: 3rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title {
@@ -138,12 +174,12 @@ label {
     padding: 1rem;
     border-radius: 1rem;
     height: 2rem;
-    width: 600px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     word-break: break-all;
-    margin-left: 420px;
+    margin-left: 10px;
 }
 
 .small-text {
@@ -156,7 +192,7 @@ label {
 
 .btn {
     grid-column: span 2;
-    background-color: var(--colour-gray-3);
+    background-color: var(--colour-gray-1);
     border: 2px solid var(--colour-white);
     color: var(--color-white);
     padding: .5rem 1rem;
@@ -165,23 +201,101 @@ label {
     cursor: pointer;
     border-radius: 1rem;
     margin-top: 20px;
+    transition: 0.5s ease;
 }
 
 .btn:hover {
-    background-color: var(--colour-gray-1);
+    background-color: var(--colour-gray-3);
+    box-shadow: var(--shadow-1);
+    transition: 0.5s ease;
 }
 
 footer {
     background-color: var(--colour-purple-1);
-    height: 88px;
+    height: auto;
+    display: grid;
     text-align: center;
     font-family: var(--font-family-2);
 }
 
-footer.p {
+footer p {
     margin-top: 20px;
-    display: flex;
+    display: block;
+    color: var(--color-purple-1);
+}
+
+footer a {
+    margin-top: 20px;
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colour-gray-white);
+    text-shadow: var(--shadow-2);
 }
 
 
 /** Copy text function properties **/
+
+#copypass-btn {
+    grid-column: span 2;
+    background-color: var(--colour-gray-1);
+    color: var(--color-white);
+    padding: .5rem 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-3);
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 20px;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+
+#copypass-btn:hover {
+    background-color: var(--colour-gray-3);
+    box-shadow: var(--shadow-1);
+    transition: 0.5s ease;
+}
+
+
+/** Tooltip **/
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
